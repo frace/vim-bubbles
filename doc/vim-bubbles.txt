@@ -1,0 +1,68 @@
+*vim-bubbles.txt*  A Vim plugin which mimics Textmate's «bubbling» feature.
+*vim-bubbles*
+
+Author:  frace <https://github.com/frace/vim-bubbles>
+
+This plugin requires Vim 7.3 or later.
+
+Help on using vim-bubbles                                        *vim-bubbles*
+
+==============================================================================
+TOC                                                              *vim-bubbles*
+
+1. Introduction .......................... |vim-bubbles-intro|
+2. Configuration ......................... |vim-bubbles-configuration|
+3. Usage ................................. |vim-bubbles-usage|
+4. Credits ............................... |vim-bubbles-credits|
+
+==============================================================================
+1. INTRODUCTION                                            *vim-bubbles-intro*
+
+vim-bubbles mimics a well known feature, to my knowledge introduced by [Textmate][what-textmate],
+later adopted by Sublime Text, sometimes called «text bubbling».
+A set of keys allows the user to move portions of lines vertically in normal and visual mode.
+In addition horizontal «bubbling» is possible, too - actually it is simple indentation mapped
+to a defined set of keys.
+
+==============================================================================
+2. CONFIGURATION                                   *vim-bubbles-configuration*
+
+                                                            *g:bubbles_leader*
+g:bubbles_leader~
+
+Default: '<C>'
+
+Choose an arbitrary leader key.
+>
+    let g:bubbles_leader = '<C>'
+<
+
+                                                            *g:bubbles_keyset*
+g:bubbles_keyset~
+
+Default: 'hjkl'
+
+Choose a set of keys: 'hjkl' || 'arrows'
+>
+    let g:bubbles_keyset = 'hjkl'
+<
+
+==============================================================================
+3. USAGE                                                   *vim-bubbles-usage*
+
+Default mappings reflect actions below:
+- <C-h>: Indents one or more lines.
+- <C-j>: Moves one or more lines down.
+- <C-k>: Moves one or more lines up.
+- <C-l>: Unindents one or more lines.
+
+==============================================================================
+4. CREDITS                                               *vim-bubbles-credits*
+
+- Plugin name inspired by Drew Neil's vimcast episode «Bubbling text»
+  http://vimcasts.org/episodes/bubbling-text/
+
+- Plugin idea inspired by Textmate
+  https://github.com/textmate/textmate
+
+vim:tw=78:ts=8:ft=help:norl:
