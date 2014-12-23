@@ -40,7 +40,7 @@ function! s:AssembleMappings(leader, keyset)
         return
     endif
 
-    " Normal mode: Move line vertically and autindent
+    " Normal mode: Move line vertically and autoindent
     execute "nnoremap <silent>" . l:leader . l:keys[1] . ":move .+1<Cr>==^"
     execute "nnoremap <silent>" . l:leader . l:keys[2] . ":move .-2<Cr>==^"
 
