@@ -1,4 +1,4 @@
-# What is it?
+# What is vim-bubbles?
 [vim-bubbles][what-vim-bubbles] is a plugin for the Vim editor.
 It mimics a well known feature, to my knowledge introduced by [Textmate][what-textmate],
 later adopted by Sublime Text, sometimes called «text bubbling».
